@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "安裝套件": "npm i",
-    "開發"  : "gulp dev"
+    "開發"  : "gulp dev",
+    "打包上線" : "gulp online"
   },
   "keywords": [],
   "author": "",
