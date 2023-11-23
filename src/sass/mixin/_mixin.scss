@@ -1,6 +1,5 @@
-
 // @include rect(寬 ,高, 圓角); // 
-@mixin rect($w , $h , $borderRadius:null){
+@mixin rect($w, $h, $borderRadius:null) {
     width: $w;
     height: $h;
     border-radius: $borderRadius;
@@ -8,16 +7,16 @@
 
 
 // @include center(寬 ,高) 置中
-@mixin center($w , $h){
-  margin: 0 auto;
-  @include rect($w , $h)
+@mixin center($w, $h) {
+    margin: 0 auto;
+    @include rect($w, $h)
 }
 
 
 
 //layout  $layout < 100  --> 90%   or == 100 -> 100%  
-@mixin layout($layout){
-    @if $layout ==100 {
+@mixin layout($layout) {
+    @if $layout==100 {
         width: $layout * 1%;
     }
 
@@ -25,14 +24,15 @@
         width: $layout * 1%;
         margin: auto;
     }
+
     @else {
         width: $layout + px;
         margin: auto;
     }
-   } 
+}
 
 //================ breakpoint ============================
- //手機板
+//手機板
 @mixin m() {
     @media screen and (max-width: $m) {
         @content;
@@ -44,9 +44,10 @@
     @media screen and (max-width: $t) {
         @content;
     }
-}  
+}
+
 // 自己設定
-@mixin d($b){
+@mixin d($b) {
     @media screen and (max-width: $b) {
         @content;
     }
@@ -55,11 +56,21 @@
 
 // ======================= grid =====================
 //grid
-@mixin grid($num , $r:null) {
+@mixin grid($num, $r:null) {
     @for $i from 1 through $num {
-        .col-#{$r}#{$i} {
-            width: math.div($i , $num) * 100%;
+        @if $r == null {
+            .col-#{$i} {
+                width: math.div($i, $num) * 100%;
+            }
         }
+
+        @else {
+            .col-#{$r}-#{$i} {
+                width: math.div($i, $num) * 100%;
+            }
+
+        }
+
     }
 }
 
@@ -79,28 +90,32 @@
 
 // 距離大小
 @mixin sapcing($spacing) {
-    @each $k ,
-     $v in $spacing {
-         .#{$k} {
-             margin-top: $v;
-         }
-     }
- }
+
+    @each $k,
+    $v in $spacing {
+        .#{$k} {
+            margin-top: $v;
+        }
+    }
+}
 
 
 //標題大小
-@mixin titleSize($title_size) {
-    @each $key ,
+@mixin H($title_size, $lineHeight:null) {
+
+    @each $key,
     $value in $title_size {
         #{$key} {
             font-size: $value;
+            line-height: $lineHeight;
         }
     }
 }
 
 //字顏色與背景色
 @mixin fontColor($color) {
-    @each $k ,
+
+    @each $k,
     $v in $color {
         .#{$k}-font {
             color: $v

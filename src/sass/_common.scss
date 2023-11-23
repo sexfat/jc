@@ -1,4 +1,12 @@
 //  共用的寫在這裡
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: $fontFamily;
+ font-size: 16px;
+}
 
 .wrapper {
  width: 100%;

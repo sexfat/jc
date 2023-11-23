@@ -1,5 +1,6 @@
 @use 'sass:math';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 // base
 
@@ -12,10 +13,12 @@
 
 // components
 @import "component/grid";
+@import "component/title";
 
 // layout
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/banner';
 
 //共用的寫在這裡 
 

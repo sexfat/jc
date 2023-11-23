@@ -10,9 +10,30 @@
 
 
 // ==== 字體 & 字級大小 ====
+$fontFamily : 'Inter', sans-serif;
+
+//標籤或是class : 字體大小 自己增加
+$fontHeadline : (
+ '.big1' : 36px,
+ '.big2' :28px,
+ '.sub_description'  : 16px,
+ '.list' : 20px,
+ 'h1' : 64px,
+ 'h2' : 36px,
+ 'h3' : 28px,
+ 'h4' : 20px,
+ 'body' : 16px
+);
+
+
+
+
+
+
+
 // ==== 顏色 ====
-$black : #333;
-$white : #f6f6f6;
+$black : #263238;
+$white : #fff;
 $gray : #888888;
 
 $primary :#01ff80; 
