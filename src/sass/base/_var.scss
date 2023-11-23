@@ -20,6 +20,7 @@ $fontHeadline : (
  '.list' : 20px,
  'h1' : 64px,
  'h2' : 36px,
+ '.h2_blue':32px,
  'h3' : 28px,
  'h4' : 20px,
  'body' : 16px
@@ -36,22 +37,26 @@ $black : #263238;
 $white : #fff;
 $gray : #888888;
 
-$primary :#01ff80; 
-$secondary :#0cd0a9; 
-$success :#33fd00; 
-$warning :#ff8800; 
-$error :#e50618; 
+//
+
+
+
 
 $fontColor : $black; // color
 $backgroundColor: $white; //背景色
 
-$color_all : (
-    primary : #0033fe,
-    secondary : #e1eb33,
-    third : #c810f6,
-    basic: #333,
-    h1 : #999
-    );
+// 字的顏色
+
+$fontcolor : (
+'.brand_pri_blue' : #15779F,
+'.primary_blue' : #113147
+
+);
+
+//  背景色 前面是class 後面是值
+$bgcolor : (
+'.brand_primary_blue' : #15779F
+);
 
 
 

@@ -114,16 +114,17 @@
 
 //字顏色與背景色
 @mixin fontColor($color) {
-
-    @each $k,
-    $v in $color {
-        .#{$k}-font {
+    @each $k,$v in $color {
+        #{$k} {
             color: $v
         }
+    }
+}
 
-        .#{$k}-bg {
+@mixin bgColor($color) {
+    @each $k,$v in $color {
+        #{$k} {
             background-color: $v;
         }
     }
-
 }
