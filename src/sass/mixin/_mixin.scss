@@ -1,0 +1,114 @@
+
+// @include rect(寬 ,高, 圓角); // 
+@mixin rect($w , $h , $borderRadius:null){
+    width: $w;
+    height: $h;
+    border-radius: $borderRadius;
+}
+
+
+// @include center(寬 ,高) 置中
+@mixin center($w , $h){
+  margin: 0 auto;
+  @include rect($w , $h)
+}
+
+
+
+//layout  $layout < 100  --> 90%   or == 100 -> 100%  
+@mixin layout($layout){
+    @if $layout ==100 {
+        width: $layout * 1%;
+    }
+
+    @else if $layout < 100 {
+        width: $layout * 1%;
+        margin: auto;
+    }
+    @else {
+        width: $layout + px;
+        margin: auto;
+    }
+   } 
+
+//================ breakpoint ============================
+ //手機板
+@mixin m() {
+    @media screen and (max-width: $m) {
+        @content;
+    }
+}
+
+//平板
+@mixin t() {
+    @media screen and (max-width: $t) {
+        @content;
+    }
+}  
+// 自己設定
+@mixin d($b){
+    @media screen and (max-width: $b) {
+        @content;
+    }
+}
+
+
+// ======================= grid =====================
+//grid
+@mixin grid($num , $r:null) {
+    @for $i from 1 through $num {
+        .col-#{$r}#{$i} {
+            width: math.div($i , $num) * 100%;
+        }
+    }
+}
+
+// 圖片背景使用
+// @each  
+@mixin img_bg($list) {
+    @each $i in $list {
+        .#{$i}_slider {
+            background-image: url('./images/#{$i}.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @content;
+        }
+    }
+}
+
+
+// 距離大小
+@mixin sapcing($spacing) {
+    @each $k ,
+     $v in $spacing {
+         .#{$k} {
+             margin-top: $v;
+         }
+     }
+ }
+
+
+//標題大小
+@mixin titleSize($title_size) {
+    @each $key ,
+    $value in $title_size {
+        #{$key} {
+            font-size: $value;
+        }
+    }
+}
+
+//字顏色與背景色
+@mixin fontColor($color) {
+    @each $k ,
+    $v in $color {
+        .#{$k}-font {
+            color: $v
+        }
+
+        .#{$k}-bg {
+            background-color: $v;
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+/*css 註解*/
+// ======  設定變數 ======
+// 字體
+// 顏色
+// 斷點
+// grid col
+// 按鈕尺吋 顏色
+// 標題字 大小 顏色
+//======================== 開始=================================================
+
+
+// ==== 字體 & 字級大小 ====
+// ==== 顏色 ====
+$black : #333;
+$white : #f6f6f6;
+$gray : #888888;
+
+$primary :#01ff80; 
+$secondary :#0cd0a9; 
+$success :#33fd00; 
+$warning :#ff8800; 
+$error :#e50618; 
+
+$fontColor : $black; // color
+$backgroundColor: $white; //背景色
+
+$color_all : (
+    primary : #0033fe,
+    secondary : #e1eb33,
+    third : #c810f6,
+    basic: #333,
+    h1 : #999
+    );
+
+
+
+
+
+
+// ==== 斷點 ====
+$m : 768px;
+$t : 1024px;
+$layout_max_width : 1160px;//container 最大的寬度
+
+// ==== 
+
+
+
+
+
+
+
+
+
+
+
+
+//border-radius
+$border-radius-1 : 4px;
+$border-radius-2 : 8px;
+$border-radius-3 : 12px;
+$border-radius-4 : 16px;

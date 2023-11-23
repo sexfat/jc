@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+
+// base
+
+@import 'base/reset';
+@import 'base/var';
+
+
+// mixin
+@import 'mixin/mixin';
+
+// components
+@import "component/grid";
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//共用的寫在這裡 
+
+@import "common";
+
+// page
+@import 'page/index';
+// @import 'page/about';
+
