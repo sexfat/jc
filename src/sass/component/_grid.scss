@@ -18,6 +18,14 @@
     width: 100%;
 }
 
+
+.flex-row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100%;
+}
+
 [class*='col-'],
 .col {
     padding-left: 15px;

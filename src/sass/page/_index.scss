@@ -1,17 +1,30 @@
 .index {
+    .banner {
+        position: relative;
+
+        .content_box {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
     .section01 {
         height: 369px;
         background-image: url('../images/section01.png');
         background-repeat: repeat-x;
         background-position: top;
         display: flex;
+        width: 100%;
 
         h2 {
             text-align: center;
             font-weight: 600;
             display: flex;
             align-items: center;
-            justify-content: center
+            justify-content: center;
+            width: 50%;
+            white-space: pre-line;
         }
 
         .absolute {
