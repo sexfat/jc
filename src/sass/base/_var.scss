@@ -14,7 +14,8 @@ $fontFamily : 'Inter',
 sans-serif;
 
 //標籤或是class : 字體大小 自己增加
-$fontHeadline : ('.big1' : 36px,
+$fontHeadline : (
+    '.big1' : 36px,
     '.big2' :28px,
     '.sub_description' : 16px,
     '.list' : 20px,
@@ -23,7 +24,22 @@ $fontHeadline : ('.big1' : 36px,
     '.h2_blue':32px,
     'h3' : 28px,
     'h4' : 20px,
-    'body' : 16px);
+    'body' : 16px
+);
+
+// ==== 顏色 ====
+$secondary : #263238;
+$white : #fff;
+$gray : #888888;
+$primary: #158D44;
+$info: #15779F;
+$green: #1B8842;
+//
+
+$padding: (
+    'p-1': 1rem,
+    'p-2': 2rem
+);
 
 // ==== CTA button ====
 $cta-styles: (
@@ -55,16 +71,18 @@ $normal-styles: (
     color: map-get($cta-styles, color);
 }
 
+$card: (
+    text-align: center,
+    padding: 24px 32px
+);
+
+.card {
+    text-align: map-get($card, text-align);
+    padding: map-get($card, padding);
+    color: $info;
+}
 
 
-// ==== 顏色 ====
-$secondary : #263238;
-$white : #fff;
-$gray : #888888;
-$primary: #158D44;
-$info: #15779F;
-$green: #1B8842;
-//
 
 
 

@@ -11,9 +11,10 @@
 
     .section01 {
         height: 369px;
-        background-image: url('../images/section01.png');
-        background-repeat: repeat-x;
-        background-position: top;
+        background-image: url('../images/section01.png'), url('../images/Group14070.png');
+        background-repeat: repeat-x, no-repeat;
+        background-position: top, right center;
+        background-size: auto;
         display: flex;
         width: 100%;
 
@@ -26,13 +27,6 @@
             width: 50%;
             white-space: pre-line;
         }
-
-        .absolute {
-            position: absolute;
-            right: 0;
-            top: 75%;
-            bottom: 0;
-        }
     }
 
     .section02 {
@@ -43,6 +37,17 @@
 
         h2 {
             font-weight: 600;
+        }
+
+        .container {
+            .row {
+                padding: 8px 0;
+                .card {
+                    .h2_blue, .body {
+                        padding: map-get($padding, 'p-2');
+                    }
+                }
+            }
         }
     }
 
