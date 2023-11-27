@@ -1,5 +1,10 @@
-// @include rect(寬 ,高, 圓角); // 
-@mixin rect($w, $h, $borderRadius:null) {
+// 背景漸層色共用
+@mixin gradient-bg($startColor, $endColor) {
+    background: linear-gradient(to bottom, $startColor, $endColor);
+}
+
+// @include rect(寬 ,高, 圓角); //
+@mixin rect($w, $h, $borderRadius: null) {
     width: $w;
     height: $h;
     border-radius: $borderRadius;
@@ -14,7 +19,7 @@
 
 
 
-//layout  $layout < 100  --> 90%   or == 100 -> 100%  
+//layout  $layout < 100  --> 90%   or == 100 -> 100%
 @mixin layout($layout) {
     @if $layout==100 {
         width: $layout * 1%;
@@ -56,9 +61,9 @@
 
 // ======================= grid =====================
 //grid
-@mixin grid($num, $r:null) {
+@mixin grid($num, $r: null) {
     @for $i from 1 through $num {
-        @if $r == null {
+        @if $r ==null {
             .col-#{$i} {
                 width: math.div($i, $num) * 100%;
             }
@@ -75,7 +80,7 @@
 }
 
 // 圖片背景使用
-// @each  
+// @each
 @mixin img_bg($list) {
     @each $i in $list {
         .#{$i}_slider {
@@ -101,7 +106,7 @@
 
 
 //標題大小
-@mixin H($title_size, $lineHeight:null) {
+@mixin H($title_size, $lineHeight: null) {
 
     @each $key,
     $value in $title_size {
@@ -114,7 +119,7 @@
 
 //字顏色與背景色
 @mixin fontColor($color) {
-    @each $k,$v in $color {
+    @each $k, $v in $color {
         #{$k} {
             color: $v
         }
@@ -122,7 +127,7 @@
 }
 
 @mixin bgColor($color) {
-    @each $k,$v in $color {
+    @each $k, $v in $color {
         #{$k} {
             background-color: $v;
         }

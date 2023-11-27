@@ -5,13 +5,21 @@
         background-repeat: repeat-x;
         background-position: top;
         display: flex;
-         h2 {
-          text-align: center;
-          font-weight: 600;
-          display: flex;
-          align-items: center;
-          justify-content: center
-         }
+
+        h2 {
+            text-align: center;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .absolute {
+            position: absolute;
+            right: 0;
+            top: 75%;
+            bottom: 0;
+        }
     }
 
     .section02 {
@@ -19,13 +27,20 @@
         background-image: url('../images/section02.png');
         background-repeat: repeat-x;
         background-position: center;
+
         h2 {
-         font-weight: 600;
+            font-weight: 600;
         }
     }
 
     .section03 {
         height: 515px;
-        background-color: #15779F;
+        background-color: $info;
+    }
+
+    .section04 {
+        height: 420px;
+        padding: 60px 0;
+        background-color: $white;
     }
 }
