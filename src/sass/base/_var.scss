@@ -18,13 +18,13 @@ $fontHeadline : (
     '.big1' : 36px,
     '.big2' :28px,
     '.sub_description' : 16px,
-    '.list' : 20px,
     'h1' : 64px,
     'h2' : 36px,
     '.h2_blue':32px,
     'h3' : 28px,
     'h4' : 20px,
-    'body' : 16px
+    'body' : 16px,
+    'description': 14px
 );
 
 // ==== 顏色 ====
@@ -45,30 +45,23 @@ $padding: (
 $cta-styles: (
     font-size: 16px,
     font-weight: 600,
-    color: #ffffff
 );
 
 
 .cta-button {
     font-size: map-get($cta-styles, font-size);
     font-weight: map-get($cta-styles, font-weight);
-    color: map-get($cta-styles, color);
+    color: $white;
 }
 
-
-
-// ==== normal button ====
-$normal-styles: (
-    font-size: 16px,
-    font-weight: 600,
-    color: #ffffff
-);
-
-
 .normal-button {
-    font-size: map-get($cta-styles, font-size);
-    font-weight: map-get($cta-styles, font-weight);
-    color: map-get($cta-styles, color);
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    background-color: $info;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
 }
 
 $card: (
@@ -85,14 +78,15 @@ $card: (
 
 
 
-
 $fontColor : $secondary; // color
 $backgroundColor: $white; //背景色
 
 // 字的顏色
 
-$fontcolor : ('.brand_pri_blue' : #15779F,
-    '.primary_blue' : #113147);
+$fontcolor : (
+    '.brand_pri_blue' : #15779F,
+    '.primary_blue' : #113147,
+);
 
 //  背景色 前面是class 後面是值
 $bgcolor : ('.brand_primary_blue' : #15779F);

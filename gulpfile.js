@@ -41,27 +41,21 @@ exports.js = minijs;
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
-const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const tailwindcss = require('tailwindcss');
-const postcssImport = require('postcss-import');
 
 function styleSass() {
     return src('src/sass/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))//編譯scss
         // .pipe(cleanCSS())// minify css
-        .pipe(postcss([
-            postcssImport, // 加入 postcss-import
-            tailwindcss(), // 加入 Tailwind CSS
-            autoprefixer,  // 加入 Autoprefixer
-            // 可以在這裡添加更多 PostCSS 插件
-        ]))
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(sourcemaps.write())
         .pipe(dest('./dist/css'));
 }
 
 exports.style = styleSass;
+
 
 
 //html template

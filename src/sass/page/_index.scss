@@ -25,6 +25,7 @@
             align-items: center;
             justify-content: center;
             width: 50%;
+            padding-left: 10%;
             white-space: pre-line;
         }
     }
@@ -54,11 +55,49 @@
     .section03 {
         height: 515px;
         background-color: $info;
+        .container {
+            .row {
+                .pre-line {
+                    white-space: pre-line;
+                }
+            }
+        }
     }
 
     .section04 {
         height: 420px;
         padding: 60px 0;
         background-color: $white;
+        .container {
+            .row {
+                .pre-line {
+                    white-space: pre-line;
+                }
+                .product_card {
+                    box-shadow: 0px 2px 4px rgba(171,190,209, 0.2);    
+                }
+            }
+        }
+    }
+
+    .section04 {
+        height: 420px;
+        padding: 60px 0;
+        background-color: $white;
+        .container {
+            .row {
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            .row {
+                .content {
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
     }
 }
