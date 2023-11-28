@@ -10,8 +10,6 @@ const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 
 
-
-
 // 搬家
 function copy(){
     return src(['*.html' , '*.js' , '!main.js' , '**/*.scss']).pipe(dest('dist'))
@@ -43,15 +41,22 @@ exports.js = minijs;
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+const tailwindcss = require('tailwindcss');
+const postcssImport = require('postcss-import');
 
 function styleSass() {
     return src('src/sass/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))//編譯scss
         // .pipe(cleanCSS())// minify css
-        .pipe(autoprefixer({
-            cascade: false
-        }))
+        .pipe(postcss([
+            postcssImport, // 加入 postcss-import
+            tailwindcss(), // 加入 Tailwind CSS
+            autoprefixer,  // 加入 Autoprefixer
+            // 可以在這裡添加更多 PostCSS 插件
+        ]))
         .pipe(sourcemaps.write())
         .pipe(dest('./dist/css'));
 }
@@ -111,7 +116,7 @@ const imagemin = require('gulp-imagemin');
 function min_images(){
     return src('src/images/*.*')
     .pipe(imagemin([
-        imagemin.mozjpeg({quality: 70, progressive: true}) // 壓縮品質      quality越低 -> 壓縮越大 -> 品質越差 
+        imagemin.mozjpeg({quality: 70, progressive: true}) // 壓縮品質      quality越低 -> 壓縮越大 -> 品質越差
     ]))
     .pipe(dest('dist/images'))
 }
@@ -140,7 +145,7 @@ const clean = require('gulp-clean');
 
 function clear() {
   return src('dist' ,{ read: false ,allowEmpty: true })//不去讀檔案結構，增加刪除效率  / allowEmpty : 允許刪除空的檔案
-  .pipe(clean({force: true})); //強制刪除檔案 
+  .pipe(clean({force: true})); //強制刪除檔案
 }
 
 exports.c = clear;
