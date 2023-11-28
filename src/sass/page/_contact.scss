@@ -1,6 +1,6 @@
 .wrapper {
     .contact {
-        height: 480px;
+        padding: map-get($padding, 'section');
         background-image: url('../images/section02.png');
         background-repeat: repeat-x;
         background-position: center;;
@@ -13,7 +13,8 @@
                 align-items: center;
                 padding: 16px 0;
                 .body {
-                    margin: 4px 0;
+                    margin: 8px 0;
+                    color: $secondary;
                 }
             }
         }

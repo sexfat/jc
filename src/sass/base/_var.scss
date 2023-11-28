@@ -38,21 +38,9 @@ $green: #1B8842;
 
 $padding: (
     'p-1': 1rem,
-    'p-2': 2rem
+    'p-2': 2rem,
+    'section': 4rem,
 );
-
-// ==== CTA button ====
-$cta-styles: (
-    font-size: 16px,
-    font-weight: 600,
-);
-
-
-.cta-button {
-    font-size: map-get($cta-styles, font-size);
-    font-weight: map-get($cta-styles, font-weight);
-    color: $white;
-}
 
 .normal-button {
     font-size: 16px;

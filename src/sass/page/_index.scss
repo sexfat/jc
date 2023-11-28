@@ -6,17 +6,33 @@
             position: absolute;
             top: 50%;
             transform: translate(0, -50%);
+            color: $white;
+            h1{
+                margin-bottom: 16px;
+            }
+            p {
+                margin-bottom: 32px;
+            }
+            .cta-button {
+                background-color: #12A5DB;
+                color: $white;
+                font-size: 16px;
+                line-height: 1.5;
+                border-radius: 4px;
+                padding: 14px 32px;
+                border: none;
+            }
         }
     }
 
     .section01 {
-        height: 369px;
         background-image: url('../images/section01.png'), url('../images/Group14070.png');
         background-repeat: repeat-x, no-repeat;
         background-position: top, right center;
         background-size: auto;
         display: flex;
         width: 100%;
+        padding: map-get($padding, 'section');
 
         h2 {
             text-align: center;
@@ -31,7 +47,7 @@
     }
 
     .section02 {
-        height: 574px;
+        padding: map-get($padding, 'section');
         background-image: url('../images/section02.png');
         background-repeat: repeat-x;
         background-position: center;
@@ -53,7 +69,7 @@
     }
 
     .section03 {
-        height: 515px;
+        padding: map-get($padding, 'section');
         background-color: $info;
         .container {
             .row {
@@ -65,38 +81,39 @@
     }
 
     .section04 {
-        height: 420px;
-        padding: 60px 0;
+        padding: map-get($padding, 'section');
         background-color: $white;
         .container {
+            .center-box {
+                text-align: center;
+                h2, .body {
+                    margin: 8px 0;
+                }
+                .body {
+                    margin-bottom: 24px;
+                }
+            }
             .row {
                 .pre-line {
                     white-space: pre-line;
                 }
                 .product_card {
-                    box-shadow: 0px 2px 4px rgba(171,190,209, 0.2);    
+                    box-shadow: 0px 2px 4px rgba(171,190,209, 0.2); 
+                    margin: 8px 12px;
+                    width: 320px;
                 }
+            }
+            .between {
+                justify-content: space-between;
             }
         }
     }
 
-    .section04 {
-        height: 420px;
-        padding: 60px 0;
+    .section05 {
+        padding: map-get($padding, 'section');
         background-color: $white;
         .container {
             .row {
-            }
-        }
-    }
-
-    .contact {
-        .container {
-            .row {
-                .content {
-                    text-align: center;
-                    align-items: center;
-                }
             }
         }
     }
