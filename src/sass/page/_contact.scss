@@ -3,10 +3,26 @@
         padding: map-get($padding, 'section');
         background-image: url('../images/section02.png');
         background-repeat: repeat-x;
-        background-position: center;;
+        background-position: center;
+
+        a {
+            color: $info;
+            text-decoration: none;  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         .container {
             .row {
-
+                h4 {
+                    color: $secondary;
+                }
+                img, h4, .body {
+                    margin-bottom: 16px;
+                }
+                .body {
+                    font-size: 20px;
+                }
             }
             .content {
                 text-align: center;
@@ -16,6 +32,12 @@
                     margin: 8px 0;
                     color: $secondary;
                 }
+            }
+            .card {
+                padding: 24px 32px;
+                width: 300px;
+                background-color: $white;
+                border-radius: 8px;
             }
         }
     }
