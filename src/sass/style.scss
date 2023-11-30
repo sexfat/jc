@@ -19,7 +19,6 @@
 // layout
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/banner';
 
 //共用的寫在這裡
 
@@ -27,5 +26,6 @@
 
 // page
 @import 'page/index';
-// @import 'page/about';
-@import 'page/contact'
+@import 'page/about';
+@import 'page/contact';
+@import 'page/product_main';

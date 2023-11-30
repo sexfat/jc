@@ -12,6 +12,36 @@ body {
    width: 100%;
    background-color: $backgroundColor;
    color: $fontColor;
+   .banner {
+      height: 394px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      color: $white;
+
+      .content_box {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          color: $white;
+          h1{
+              margin-bottom: 16px;
+              font-family: 'Tauri', sans-serif;
+          }
+          p {
+              margin-bottom: 32px;
+          }
+      }
+  }
+  
+  .pages {
+      background-image: url('../images/banner_main.png');
+  }
+  .products_main_bg {
+      background-image: url('../images/banner_product_main.png');
+  }
 }
 
 .img_box {

@@ -52,14 +52,9 @@ $padding: (
     border-radius: 4px;
 }
 
-$card: (
-    text-align: center,
-    padding: 24px 32px
-);
-
 .card {
-    text-align: map-get($card, text-align);
-    padding: map-get($card, padding);
+    text-align: center;
+    padding: 24px 32px;
     color: $info;
 }
 

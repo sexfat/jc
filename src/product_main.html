@@ -5,16 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>首頁</title>
+    <title>Products</title>
 </head>
 
 <body>
-    <div class="wrapper index">
+    <div class="wrapper product_main">
         <!-- 裡面放內容 -->
         @@include('layout/header.html')
-        <div class="banner">
-            <h1>Spherica™</h1>
-            <p class="body">High uniformity with various metal coating technology.</p>
+        <div class="banner products_main_bg">
+            <div class="container">
+                <div class="content_box">
+                    <h1>Spherica™</h1>
+                    <p class="body">High uniformity with various metal coating technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="./images/product_spherica.svg" alt="">
+                        <p>Monosized metal-coated polymer particles</p>
+                    </div>
+                    <div class="col-8">
+                        <h2>Spherica™</h2>
+                        <ul>
+                            <li>Commercial volume capacity with stable particle quality</li>
+                            <li>Good conductivity for electronic and solar applications</li>
+                            <li>Uniform and unique properties in variety size selections</li>
+                            <li>Cost savings potential</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product categories -->
+        <div class="section02">
+            <div class="container">
+                <div class="center-box">
+                    <h2>Product categories</h2>
+                    <div class="body">
+                        We utilize unique particle technologies to develop high-performance inter-connected materials for a wide range of applications
+                    </div>
+                </div>
+                <div class="row between">
+                    <div class="col-3 card product_card">
+                        <img src="./images/product_categories_n.svg" alt="ag">
+                        <h3 class="primary_blue center-box">
+                            Spherica™ N
+                        </h3>
+                        <div class="description">
+                            For Gap spacer
+                        </div>
+                        <button class="normal-button">Learn More</button>
+                    </div>
+                    <div class="col-3 card product_card">
+                        <img src="./images/product_categories_ag.svg" alt="ag">
+                        <h3 class="primary_blue center-box">
+                            Spherica™ Ag
+                        </h3>
+                        <div class="description">
+                            For Solar electronics, die attach
+                        </div>
+                        <button class="normal-button">Learn More</button>
+                    </div>
+                    <div class="col-3 card product_card">
+                        <img src="./images/product_categories_au.svg" alt="ag">
+                        <h3 class="primary_blue center-box">
+                            Spherica™ Au
+                        </h3>
+                        <div class="description">
+                            For Display
+                        </div>
+                        <button class="normal-button">Learn More</button>
+                    </div>
+
+                    <div class="col-3 card product_card">
+                        <img src="./images/product_categories_ni.svg" alt="ag">
+                        <h3 class="primary_blue center-box">
+                            Spherica™ Ni
+                        </h3>
+                        <div class="description">
+                            For Display
+                        </div>
+                        <button class="normal-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         @@include('layout/footer.html')
