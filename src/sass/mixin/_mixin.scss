@@ -3,6 +3,11 @@
     background: linear-gradient(to bottom, $startColor, $endColor);
 }
 
+@mixin sectionPadding(){
+    width: 100%;
+    padding: map-get($padding, 'section');
+}
+
 // @include rect(寬 ,高, 圓角); //
 @mixin rect($w, $h, $borderRadius: null) {
     width: $w;
@@ -39,14 +44,14 @@
 //================ breakpoint ============================
 //手機板
 @mixin m() {
-    @media screen and (max-width: $m) {
+    @media screen and (max-width: 640px) {
         @content;
     }
 }
 
 //平板
 @mixin t() {
-    @media screen and (max-width: $t) {
+    @media screen and (max-width: 992px) {
         @content;
     }
 }

@@ -17,7 +17,7 @@ sans-serif;
 $fontHeadline : (
     '.big1' : 36px,
     '.big2' :28px,
-    '.sub_description' : 16px,
+    '.sub_title' : 16px,
     'h1' : 64px,
     'h2' : 36px,
     '.h2_blue':32px,
@@ -34,12 +34,13 @@ $gray : #888888;
 $primary: #158D44;
 $info: #15779F;
 $green: #1B8842;
+$brand_pri_blue: #12A5DB;
 //
 
 $padding: (
     'p-1': 1rem,
     'p-2': 2rem,
-    'section': 4rem,
+    'section': 4rem 0,
 );
 
 .normal-button {
@@ -67,7 +68,7 @@ $backgroundColor: $white; //背景色
 // 字的顏色
 
 $fontcolor : (
-    '.brand_pri_blue' : #15779F,
+    '.brand_pri_blue' : #12A5DB,
     '.primary_blue' : #113147,
 );
 

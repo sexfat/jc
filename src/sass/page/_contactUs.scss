@@ -1,0 +1,23 @@
+.contact {
+    .section {
+        @include sectionPadding();
+        .center-box {
+            text-align: center;
+            .box {
+                &:nth-child(1) {
+                    margin-bottom: 38px;
+                }
+                h2 {
+                    margin: 8px 0;
+                }
+                a {
+                    color: $info;
+                    display: inline-block;
+                    padding: 10px 0;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}

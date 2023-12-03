@@ -1,0 +1,97 @@
+.about {
+    .iso {
+        padding: 16px 0;
+        text-align: right;
+        .row {
+            img {
+                width: 68px;
+            }
+        }
+    }
+    .section01 {
+        padding: 32px 0 60px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 50px;
+        }
+        h4 {
+            color: $brand_pri_blue;
+        }
+
+    }
+    .section02 {
+        @include sectionPadding();
+
+        .row {
+            .box {
+                width: 100%;
+                margin-bottom: 24px;
+                padding-right: 60px;
+                padding-right: 60px;
+                @include t(){
+                    padding-right: 0;
+                }
+                h2 {
+                    margin-bottom: 8px;
+                }
+                .sub_title {
+                    font-weight: 700;
+                }
+            }
+            .imgBox {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+    .section03 {
+        @include sectionPadding();
+        .row {
+            justify-content: space-around;
+            .card {
+                @include m() {
+                    width: 100%;
+                }
+                @include t() {
+                    width: 48%;
+                }
+                width: 31%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url('../../images/about_m_bg.svg');
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: 100%;
+                width: 31%;
+                margin: 4px 8px;
+                padding: 60px 32px;
+                .imgBox {
+                    width: 183px;
+                    @include d(1024) {
+                        width: 100%;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                p {
+                    line-height: 150%;
+                    font-weight: 700px;
+                    padding: 10px;
+                    color: $info;
+                }
+                .body {
+                    padding: 10px;
+                    color: $secondary;
+                    text-align: left;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
