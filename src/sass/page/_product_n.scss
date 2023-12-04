@@ -1,0 +1,32 @@
+.product_n {
+    .section03 {
+        .rightBox {
+            justify-content: flex-end;
+        }
+    }
+    .section04 {
+        .row {
+            .content {
+                ul {
+                    li {
+                        margin: 24px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .top_section {
+        .leftBox {
+            padding-right: 120px;
+        }
+        .rightBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .content_box {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -45,6 +45,14 @@ body {
   .products_ag_bg {
    background-image: url('../images/banner_product_ag.png');
   }
+
+  .products_au_bg {
+   background-image: url('../images/banner_product_au.png');
+  }
+
+  .products_n_bg {
+   background-image: url('../images/banner_product_n.png');
+  }
 }
 
 .img_box {
@@ -56,10 +64,6 @@ body {
 
 button {
    cursor: pointer;
-}
-
-.between {
-   justify-content: space-between;
 }
 
 // 顏色定義 測試

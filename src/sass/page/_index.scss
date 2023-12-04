@@ -34,7 +34,7 @@
         background-size: auto;
         display: flex;
         width: 100%;
-        padding: map-get($padding, 'section');
+        @include sectionPadding();
 
         h2 {
             text-align: center;
@@ -50,7 +50,7 @@
 
     // Core Technology
     .section02 {
-        padding: map-get($padding, 'section');
+        @include sectionPadding();
         background-image: url('../images/section02.png');
         background-repeat: repeat-x;
         background-position: center;
@@ -76,7 +76,6 @@
 
     // Particle Technology
     .section03 {
-        // padding: map-get($padding, 'section');
         background-color: $info;
         .container {
             .row {
@@ -122,7 +121,7 @@
 
     // Our products
     .section04 {
-        padding: map-get($padding, 'section');
+        @include sectionPadding();
         background-color: $white;
         .container {
             .center-box {
@@ -155,7 +154,7 @@
     }
 
     .section05 {
-        padding: map-get($padding, 'section');
+        @include sectionPadding();
         background-color: $white;
         .container {
             .row {

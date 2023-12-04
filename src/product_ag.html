@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="wrapper product_ag">
+    <div class="wrapper product_all">
         <!-- 裡面放內容 -->
         @@include('layout/header.html')
         <div class="banner products_ag_bg">
@@ -54,28 +54,28 @@
                         <li>Superior reliablility</li>
                     </ul>
                 </div>
-                <div class="row-cols-1 row-cols-md-2 row-cols-lg-4 row between">
-                    <div class="col col-6 card">
+                <div class="row-cols-1 row-cols-md-2 row between">
+                    <div class="col col-6 product_card">
                         <div class="imgBox">
                             <img src="./images/product_ag_features_ag.svg" alt="ag">
                         </div>
                         <div class="content">
-                            <h3 class="primary_blue center-box">
+                            <h4>
                                 Spherica™ Ag
-                            </h3>
+                            </h4>
                             <div class="description">
                                 Conductive adhesive with Spherica™ Ag
                             </div>
                         </div>
                     </div>
-                    <div class="col col-6 card">
+                    <div class="col col-6 product_card">
                         <div class="imgBox">
                             <img src="./images/product_ag_features_ag.svg" alt="ag">
                         </div>
                         <div class="content">
-                            <h3 class="primary_blue center-box">
+                            <h4>
                                 Silver flakes
-                            </h3>
+                            </h4>
                             <div class="description">
                                 Conductive adhesive with silver flakes
                             </div>
@@ -87,7 +87,7 @@
         <div class="section03">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5 leftBox">
                         <h2>
                             Comparison of Spherica Ag products to conventional silver flake adhesive
                         </h2>
@@ -95,8 +95,65 @@
                             In adhesives made with Spherica Ag products, the polymer core replaces a significant fraction of the silver volume, leading to cost savings. The following table summarizes the difference between a typical adhesive containing silver flakes and one containing Spherica Ag-10-01.
                         </div>
                     </div>
-                    <div class="col-6">
-                        123
+                    <div class="col-7 rightBox">
+                        <div class="contentBox">
+                            <h4>Spherica Ag-10-03</h4>
+                            <img src="./images/product_ag_features_comparison_more.svg" alt="">
+                            <p>1 kg Spherica = <span>550</span> ml
+                            <br>
+                            density <span>1.8</span> g/cm³
+                            </p>
+                            <img src="./images/product_pop.svg" alt="">
+                            <div class="bottomBox">
+                                <div class="imgBox">
+                                    <img src="./images/product_ag_features_comparison_lots.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        <span>1</span>
+                                        kg filler loading
+                                    </p>
+                                    <p>
+                                        <span>60</span>
+                                        wt%
+                                    </p>
+                                    <p>
+                                        <span>13</span>
+                                        x 100 ml
+                                    </p>
+                                    <p>syringes with ECA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentBox">
+                            <h4>Silver flakes</h4>
+                            <img src="./images/product_ag_features_comparison_less.svg" alt="">
+                            <p>1 kg conductive particles =<span>100</span> ml
+                            <br>
+                            density <span>1.5</span> g/cm³
+                            </p>
+                            <img src="./images/product_pop.svg" alt="">
+                            <div class="bottomBox">
+                                <div class="imgBox">
+                                    <img src="./images/product_ag_features_comparison_few.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        <span>1</span>
+                                        kg filler loading
+                                    </p>
+                                    <p>
+                                        <span>75</span>
+                                        wt%
+                                    </p>
+                                    <p>
+                                        <span>5</span>
+                                        x 100 ml
+                                    </p>
+                                    <p>syringes with ECA</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -105,12 +162,12 @@
         <div class="section04">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-8">
                         <div class="imgBox">
                             <img src="./images/product_ag_applications.png" alt="">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4 content">
                         <h2>
                             Applications
                         </h2>
@@ -129,15 +186,14 @@
 
         <div class="section05">
             <div class="container">
-                <div class="row-cols-1 row-cols-lg-2 row">
-                    <div class="col col-8">
-                        <h2>
+                <div class="row-cols-1 row-cols-lg-2 row between">
+                    <div class="col col-8 leftBox">
+                        <h3>
                             Example / Solar panel 
-                        </h2>
+                        </h3>
                         <p>
-                            Below is content place holder.
-Uniform particle size distribution, coefficient of variation (Cv)  7%, uniform gap control. Abundant particle size lineup from 2μm to 600μm.
-
+                            Below is content place holder. <br>
+                            Uniform particle size distribution, coefficient of variation (Cv)  7%, uniform gap control. Abundant particle size lineup from 2μm to 600μm.
                         </p>
                     </div>
                     <div class="col col-4">
@@ -152,8 +208,10 @@ Uniform particle size distribution, coefficient of variation (Cv)  7%, uniform g
         <div class="download">
             <div class="container">
                 <div class="row">
-                    <h2>Product information download</h2>
-                    <button>Download PDF</button>
+                    <div class="content">
+                        <h2>Product information download</h2>
+                        <button class="normal-button">Download PDF</button>
+                    </div>
                 </div>
             </div>
         </div>
