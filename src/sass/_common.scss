@@ -53,6 +53,13 @@ body {
   .products_n_bg {
    background-image: url('../images/banner_product_n.png');
   }
+
+  .applications {
+      background-image: url('../../images/applications_bg_small.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+   }  
 }
 
 .img_box {
