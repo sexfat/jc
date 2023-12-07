@@ -1,4 +1,6 @@
 .about {
+    line-height: 1.5;
+
     .iso {
         padding: 16px 0;
         text-align: right;
@@ -34,10 +36,6 @@
                 margin-bottom: 8px;
             }
 
-            .body {
-                line-height: 1.5;
-            }
-
             .imgBox {
                 width: 100%;
 
@@ -54,17 +52,17 @@
 
         .row {
             justify-content: space-around;
-
+            gap: 8px;
             .card {
                 @include m() {
                     width: 100%;
                 }
-
-                @include t() {
+                
+                @include d(1200px) {
                     width: 48%;
                 }
 
-                width: 31%;
+                width: 31.333%;
 
                 display: flex;
                 flex-direction: column;
@@ -73,7 +71,7 @@
                 background-repeat: no-repeat;
                 background-position: top center;
                 background-size: 100%;
-                margin: 4px 8px;
+                // margin: 8px;
                 padding: 80px 32px;
 
                 .imgBox {

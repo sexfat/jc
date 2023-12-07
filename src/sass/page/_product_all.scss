@@ -1,26 +1,29 @@
 .product_all {
+    line-height: 1.5;
     .section01 {
         @include sectionPadding();
-
-        .col-5 {
-            p {
-                // text-align: right;
-                margin-top: 8px;
+        .container {
+            display: grid;
+            gap: 64px;
+            .col-5 {
+                p {
+                    margin-top: 8px;
+                }
             }
-        }
-        .col-7 {
-            padding: 24px 64px;
-            .subTitle {
-                margin-bottom: 8px;
-                display: flex;
-                align-items: center;
-                .imgBox {
-                    width: 111px;
-                    height: 111px;
-                    margin-right: 8px;
-                    img {
-                        width: 100%;
-                        height: 100%;
+            .col-7 {
+                padding: 24px 64px;
+                .subTitle {
+                    margin-bottom: 8px;
+                    display: flex;
+                    align-items: center;
+                    .imgBox {
+                        width: 111px;
+                        height: 111px;
+                        margin-right: 8px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                 }
             }
@@ -59,12 +62,14 @@
                 border-radius: 5.57px;
                 box-shadow: 0px 5.569px 11.137px 0px rgba(171, 190, 209, 0.40);
                 .content {
+                    padding: 24px;
                     h4 {
                         color: $info;
                         margin-bottom: 8px;
                     }
                     .description {
                         color: $pri_grey;
+                        white-space: pre-line;
                     }
                 }
             }
@@ -146,20 +151,27 @@
 
     .section05 {
         @include sectionPadding();
-        .row {
-            align-items: center;
-            .leftBox {
-                h3 {
-                    margin-bottom: 36px;
+        .container {
+            display: grid;
+            gap: 48px;
+            .row {
+                align-items: center;
+                .leftBox {
+                    h3 {
+                        margin-bottom: 12px;
+                    }
+                    display: grid;
+                    gap: 36px;
+                    p {
+                        line-height: 1.5;
+                    }
                 }
-                p {
-                    line-height: 1.5;
+                .imgBox {
+                    text-align: right;
                 }
-            }
-            .imgBox {
-                text-align: right;
             }
         }
+
     }
 
     .download {
