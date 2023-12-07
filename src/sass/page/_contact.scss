@@ -1,5 +1,6 @@
 .wrapper {
     .contact {
+        line-height: 1.5;
         padding: map-get($padding, 'section');
         background-image: url('../images/section02.png');
         background-repeat: repeat-x;
@@ -7,35 +8,45 @@
 
         a {
             color: $info;
-            text-decoration: none;  
+            text-decoration: none;
+
             &:hover {
-              text-decoration: underline;
+                text-decoration: underline;
             }
-          }
+        }
+
         .container {
             .row {
                 h4 {
                     color: $secondary;
                 }
-                img, h4, .body {
+
+                img,
+                h4,
+                .body {
                     margin-bottom: 16px;
                 }
+
                 .body {
                     font-size: 20px;
                 }
             }
+
             .content {
                 text-align: center;
                 align-items: center;
                 padding: 16px 0;
-                @include t{
+
+                @include t {
                     width: 100%;
                 }
+
                 .body {
                     margin: 8px 0;
                     color: $secondary;
                 }
             }
+
             .card {
                 padding: 24px 32px;
                 width: 300px;
