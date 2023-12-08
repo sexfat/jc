@@ -22,10 +22,13 @@
         }
         .rightBox {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-between;
             .content_box {
                 text-align: center;
+                p {
+                    color: $pri_grey;
+                }
             }
         }
     }
