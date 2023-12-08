@@ -12,6 +12,7 @@ body {
    width: 100%;
    background-color: $backgroundColor;
    color: $fontColor;
+
    .banner {
       height: 394px;
       width: 100%;
@@ -22,44 +23,54 @@ body {
       color: $white;
 
       .content_box {
-          position: absolute;
-          top: 50%;
-          transform: translate(0, -50%);
-          color: $white;
-          h1{
-              margin-bottom: 16px;
-              font-family: 'Tauri', sans-serif;
-          }
-          p {
-              margin-bottom: 32px;
-          }
+         position: absolute;
+         top: 50%;
+         transform: translate(0, -50%);
+         color: $white;
+
+         h1 {
+            margin-bottom: 16px;
+            font-family: 'Tauri', sans-serif;
+         }
+
+         p {
+            margin-bottom: 32px;
+         }
       }
-  }
-  
-  .pages {
+   }
+
+   .pages {
       background-image: url('../images/banner_main.png');
-  }
-  .products_main_bg {
+   }
+
+   .products_main_bg {
       background-image: url('../images/banner_product_main.png');
-  }
-  .products_ag_bg {
-   background-image: url('../images/banner_product_ag.png');
-  }
+   }
 
-  .products_au_bg {
-   background-image: url('../images/banner_product_au.png');
-  }
+   .products_ag_bg {
+      background-image: url('../images/banner_product_ag.png');
+   }
 
-  .products_n_bg {
-   background-image: url('../images/banner_product_n.png');
-  }
+   .products_au_bg {
+      background-image: url('../images/banner_product_au.png');
+   }
 
-  .applications {
+   .products_n_bg {
+      background-image: url('../images/banner_product_n.png');
+   }
+
+   .applications {
       background-image: url('../../images/applications_bg_small.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-   }  
+   }
+
+   .about,
+   .contactBg {
+      height: 308px;
+      background-image: url('../images/banner_main_2.png');
+   }
 }
 
 .img_box {
