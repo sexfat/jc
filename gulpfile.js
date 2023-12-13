@@ -23,6 +23,11 @@ function img_copy(){
     return src(['src/images/*.*' , 'src/images/**/*.*']).pipe(dest('dist/images'))
 }
 
+//圖片打包
+function files_copy(){
+    return src(['src/files/*.*']).pipe(dest('dist/files'))
+}
+
 //css 壓縮
 
 
@@ -151,12 +156,12 @@ exports.c = clear;
 
 
 //開發用
-exports.dev = series(parallel(includeHTML , styleSass , minijs , img_copy) , browser);
+exports.dev = series(parallel(includeHTML , styleSass , minijs , img_copy, files_copy) , browser);
 
 
 
 //上線用
-exports.online = series(clear ,parallel(includeHTML , styleSass , babel5 , min_images))
+exports.online = series(clear ,parallel(includeHTML , styleSass , babel5 , min_images, files_copy))
 
 
 

@@ -77,6 +77,9 @@
     }
     .section03 {
         @include sectionPadding();
+        .row {
+            align-items: center;
+        }
         .leftBox {
             @include t() {
                 width: 100%;
@@ -84,10 +87,8 @@
             display: flex;
             flex-direction: column;
             h2 {
-                @include t() {
-                    padding-bottom: 16px;
-                }
-                padding-bottom: 64px;
+                width: 100%;
+                margin-bottom: 10px;
             }
             .content {
                 padding: 16px 0;
@@ -143,7 +144,8 @@
                     margin-left: -20px;
                 }
                 li {
-                    margin: 8px 0;
+                    margin: 10px 0;
+                    font-size: 20px;
                 }
             }
         }
@@ -157,11 +159,15 @@
             .row {
                 align-items: center;
                 .leftBox {
+                    .first_title {
+                        margin-bottom: 36px;
+                    }
                     h3 {
-                        margin-bottom: 12px;
+                        color: $pri_blue;
+                        margin-bottom: 10px;
+                        line-height: 36px;
                     }
                     display: grid;
-                    gap: 36px;
                     p {
                         line-height: 1.5;
                     }

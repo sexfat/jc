@@ -17,11 +17,14 @@
         text-align: center;
 
         h2 {
-            margin-bottom: 50px;
+            line-height: 44px;
+            margin-bottom: 10px;
         }
 
         h4 {
             color: $brand_pri_blue;
+            line-height: 30px;
+            font-weight: 600;
         }
 
     }

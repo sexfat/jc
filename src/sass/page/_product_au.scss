@@ -10,12 +10,27 @@
         }
     }
     .section05 {
-        .row {
-            .leftBox {
-                .box {
-                    
+        .container {
+            .row {
+                .leftBox {
+                    display: grid;
+                    gap: 48px;
+                    .box {
+                        .first_title {
+                            margin-bottom: 36px;
+                        }
+                        h3 {
+                            color: $pri_blue;
+                            margin-bottom: 10px;
+                            line-height: 36px;
+                        }
+                        p {
+                            line-height: 1.5;
+                        }
+                    }
                 }
             }
         }
+
     }
 }

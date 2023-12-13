@@ -12,10 +12,14 @@ header {
     width: 145px;
     height: 42px;
     font-size: initial;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   nav {
-    width: 300px;
+    max-width: 1160px;
 
     ul {
       display: flex;

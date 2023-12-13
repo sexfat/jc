@@ -37,6 +37,9 @@ body {
             margin-bottom: 32px;
          }
       }
+      .body {
+         color: #D2E5F3;
+      }
    }
 
    .pages {
@@ -60,7 +63,7 @@ body {
    }
 
    .applications {
-      background-image: url('../../images/applications_bg_small.png');
+      background-image: url('../images/applications_bg_small.png');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -84,10 +87,7 @@ button {
    cursor: pointer;
 }
 
-// 顏色定義 測試
-
-
-
-.h {
-   height: 300px;
+h2 {
+   color: $pri_blue;
+   font-weight: 600;
 }
